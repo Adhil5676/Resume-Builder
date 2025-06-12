@@ -35,7 +35,7 @@ const Preview = () => {
         Download PDF
       </button>
 
-      {/* ✅ Wrap the rendered resume inside a div with id="resume-section" */}
+     
       <div id="resume-section">
         {renderTemplate()}
       </div>

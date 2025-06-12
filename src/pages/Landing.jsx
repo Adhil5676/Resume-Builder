@@ -1,4 +1,4 @@
-// src/pages/Landing.jsx
+
 import { Link } from "react-router-dom";
 import heroImg from "../assets/res2.png"; 
 
@@ -7,7 +7,7 @@ function Landing() {
     <section className="px-6 py-12 backdrop-blur-0 min-h-[80vh]">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         
-        {/* Text Content */}
+        
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-body1 font-bold text-rose-900 mb-4">
             Build Your Modern Resume Easily With RESBEE
@@ -22,7 +22,7 @@ function Landing() {
           </Link>
         </div>
 
-        {/* Image Content */}
+       
         <div className="md:w-1/2">
           <img
             src={heroImg}
@@ -32,7 +32,7 @@ function Landing() {
         </div>
       </div>
 
-      {/* Features Section */}
+      {/* Features  */}
       <div className="mt-16 text-center">
         <h2 className="text-3xl font-semibold font-body1 text-gray-950 mb-6">Features</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
