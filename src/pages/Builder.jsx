@@ -41,7 +41,7 @@ function Builder() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
+    <div className="max-w-3xl mx-auto px-4 mt-12 py-8">
       <h2 className="text-3xl font-body1 font-bold mb-6 text-center text-gray-800">
         Resume Builder
       </h2>
@@ -77,7 +77,7 @@ function Builder() {
 
         </div>
 
-        {/* Basic Fields */}
+        {/* Basics */}
         <input name="fullName" onChange={handleChange} placeholder="Full Name" className="w-full p-3 bg-rose-50 text-black border rounded" required />
         <input name="email" onChange={handleChange} placeholder="Email" className="w-full p-3 bg-rose-50 text-black border rounded" required />
         <input name="phone" onChange={handleChange} placeholder="Phone" className="w-full p-3 bg-rose-50  text-black border rounded" required />

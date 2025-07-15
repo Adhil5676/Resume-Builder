@@ -4,7 +4,7 @@ import heroImg from "../assets/res2.png";
 
 function Landing() {
   return (
-    <section className="px-6 py-12 backdrop-blur-0 min-h-[80vh]">
+    <section className="px-6 mt-10 py-12 backdrop-blur-0 min-h-[80vh]">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         
         
@@ -32,27 +32,45 @@ function Landing() {
         </div>
       </div>
 
-      {/* Features  */}
-      <div className="mt-16 text-center">
-        <h2 className="text-3xl font-semibold font-body1 text-gray-950 mb-6">Features</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {[
-            "Modern Resume Layouts",
-            "Easy-to-Use Interface",
-            "Real-time PDF Preview",
-            "Download as PDF",
-            "No Login Required",
-            "Responsive Design",
-          ].map((feature, i) => (
-            <div
-              key={i}
-              className="bg-rose-50 p-6 rounded-xl shadow hover:shadow-2xl transition hover:bg-rose-600 duration-500"
-            >
-              <p className="text-gray-950 font-body2 text-lg font-medium">{feature}</p>
-            </div>
-          ))}
-        </div>
+     {/* Features  */}
+<div className="mt-20 text-center">
+  <h2 className="text-3xl font-semibold font-body1 text-gray-950 mb-8 drop-shadow-sm">
+    Features
+  </h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    {[
+      "Modern Resume Layouts",
+      "Easy-to-Use Interface",
+      "Real-time PDF Preview",
+      "Download as PDF",
+      "No Login Required",
+      "Responsive Design",
+    ].map((feature, i) => (
+      <div
+        key={i}
+        className="
+          bg-white/30
+          backdrop-blur-lg
+          border border-white/20
+          rounded-2xl
+          shadow-xl
+          p-7
+          transition
+          hover:scale-105
+          hover:shadow-2xl
+          hover:bg-white/50
+          duration-300
+          flex items-center justify-center
+          min-h-[120px]
+        "
+      >
+        <p className="text-gray-900 font-body2 text-lg font-medium drop-shadow-sm">
+          {feature}
+        </p>
       </div>
+    ))}
+  </div>
+</div>
     </section>
   );
 }

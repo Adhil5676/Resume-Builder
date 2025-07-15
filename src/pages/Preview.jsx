@@ -22,7 +22,7 @@ const Preview = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mt-14 mx-auto px-4 py-8">
       <TemplateSelector
         selectedTemplate={selectedTemplate}
         setSelectedTemplate={setSelectedTemplate}
@@ -30,7 +30,7 @@ const Preview = () => {
 
       <button
         onClick={() => downloadPDF("resume-section")}
-        className="mb-4 px-6 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+        className="mb-4 px-6 py-2 bg-rose-600 text-white rounded hover:bg-rose-700 duration-500"
       >
         Download PDF
       </button>
